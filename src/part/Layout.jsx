@@ -3,10 +3,11 @@ import Menu from './Menu'
 import { Outlet } from 'react-router-dom'
 import Sidebar from './Sidebar'
 
+
 function Layout() {
   return (
     <>
-    <div className="container-fluid">
+    <div className="container-fluid" >
         <div className='row'>
             <div className='col'>
                 <Menu/>

@@ -10,6 +10,7 @@ import Calculator from './page/Calculator'
 import Demostate from './page/Demostate'
 import Crud from './page/Crud'
 import Fetchdemo from './page/Fetchdemo'
+import Detailsubject from './page/Detailsubject'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/state" element={<Demostate/>}/>
             <Route path="/crud" element={<Crud/>}/>
             <Route path="/fetch" element={<Fetchdemo/>}/>
+            <Route path="/fetch/:id" element={<Detailsubject/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
