@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
 function Crud() {
-    const [data, setData]=useState([{}])
+    const [data, setData]=useState([])
+
     const [name,setName]=useState({
         name:"",
         rollno:"",
@@ -25,14 +26,16 @@ function Crud() {
             </tr>
             <tr>
                 <td colSpan={4}>
-                    <button className='btn btn-primary' onClick={()=>{
+                <button className='btn btn-primary' onClick={()=>{
                         setData([...data,name])
                         setName({
                             name:"",
                             rollno:"",
                             city:""
                         })
-                    }}>Save</button></td>
+                    }}>Save</button>
+                  
+                    </td>
             </tr>
         </table>
         
@@ -44,10 +47,11 @@ function Crud() {
                     <td>{item.rollno}</td>
                     <td>{item.city}</td>
                     <td>
-                        <button className='btn btn-danger' onClick={()=>{
+                    <button className='btn btn-danger' onClick={()=>{
                             const name2=data.filter((item,index)=>index!=id);
                             setData(name2)
                         }}>Delete</button>
+                        
                     </td>
                 </tr>
             ))
