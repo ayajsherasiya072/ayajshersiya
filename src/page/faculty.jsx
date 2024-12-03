@@ -42,7 +42,7 @@ function Faculty() {
     ]
   return (
     <>
-     <div className='container-fluid m-3' style={{height:"100%"}}>
+     <div className='container-fluid m-3 vh-100'>
     <div className='row'>
     {
       faculty.map((faculty, id) => (

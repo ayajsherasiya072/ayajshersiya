@@ -33,6 +33,9 @@ function Menu() {
             <li class="nav-item">
             <Link class="nav-link active fs-5" aria-current="page" to="/crud">Crud</Link>
             </li>
+            <li class="nav-item">
+            <Link class="nav-link active fs-5" aria-current="page" to="/fetch">Fetch</Link>
+            </li>
         </ul> 
         </div>
         </div>

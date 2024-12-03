@@ -9,6 +9,7 @@ import Detailfaculty from './page/Detailfaculty'
 import Calculator from './page/Calculator'
 import Demostate from './page/Demostate'
 import Crud from './page/Crud'
+import Fetchdemo from './page/Fetchdemo'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/calc" element={<Calculator/>}/>
             <Route path="/state" element={<Demostate/>}/>
             <Route path="/crud" element={<Crud/>}/>
+            <Route path="/fetch" element={<Fetchdemo/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
