@@ -14,8 +14,7 @@ function Calculator() {
     <>
         <table className='border border-black mt-5 bg-secondary9396552' align='center'>
             <tr>
-                {/* <td colSpan={4}><input  type="text"></input></td> */}
-                <h3>{data}</h3>
+                <td colSpan={4}><input  type="text" value={data}></input></td>
             </tr>
             <tr>
                 <td><button className='btn bg-dark text-white' onClick={handle}>1</button></td>

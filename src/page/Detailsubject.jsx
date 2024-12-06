@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLoaderData, useParams } from 'react-router-dom'
 
 function Detailsubject() {
-    const [data, setData] =useState([])
+    // const [data, setData] =useState([])
     const {id} = useParams()
+    const data = useLoaderData()
 
-    useEffect(()=>{
-        fetch("https://62d6c51451e6e8f06f12bd5d.mockapi.io/faculties/"+id)
-        .then(res=>res.json())
-        .then(res=>setData(res))
-    },[])
+    // useEffect(()=>{
+        
+    // },[])
   return (
     <>
     <h1>{data.id}</h1>
@@ -21,3 +20,13 @@ function Detailsubject() {
 }
 
 export default Detailsubject
+
+export const fetchData = async({params})=>{
+;
+  const { id } = params
+  console.log(id)
+  const response = await fetch("https://65f80bc2b4f842e80886b65e.mockapi.io/Faculty/"+id)
+  const data = await response.json()
+  console.log(data) 
+  return data  
+}
